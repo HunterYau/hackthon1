@@ -1,84 +1,84 @@
-{"kind":"deck","id":"pr/iqhc80","name":"Deck"}
-{"kind":"layout","layoutId":"85ee3d42-e85d-4ed6-9020-2ebe2447c20d","name":"Master","type":"master"}
-{"kind":"layout","layoutId":"38464a5c-9776-4d43-8526-c6f9a6c14923","name":"Title Slide","type":"title"}
-{"kind":"slide","id":"sl/fy8mwx","slide":1,"title":"CSNHS 26-27 HACKATHON","textShapes":6}
-{"kind":"textbox","id":"sh/lc32p8vy","slide":1,"text":"CSNHS 26-27 HACKATHON","textPreview":"CSNHS 26-27 HACKATHON","textChars":21,"textLines":1,"bbox":[78,112,560,34]}
-{"kind":"textbox","id":"sh/y9cjutw7","slide":1,"text":"Pathfolio","textPreview":"Pathfolio","textChars":9,"textLines":1,"bbox":[72,176,730,112]}
-{"kind":"textbox","id":"sh/zalknyds","slide":1,"text":"A high school experience tracker","textPreview":"A high school experience tracker","textChars":32,"textLines":1,"bbox":[78,298,700,50]}
-{"kind":"textbox","id":"sh/8ze103ep","slide":1,"text":"Capture the details now. Use them when applications begin.","textPreview":"Capture the details now. Use them when applications begin.","textChars":58,"textLines":1,"bbox":[78,382,650,84]}
-{"kind":"textbox","id":"sh/90n2t8va","slide":1,"text":"WORKING JAVA DEMO","textPreview":"WORKING JAVA DEMO","textChars":17,"textLines":1,"bbox":[78,514,220,38]}
-{"kind":"textbox","id":"sh/mxcjydwj","slide":1,"text":"Student view + counselor review + resume export","textPreview":"Student view + counselor review + resume export","textChars":47,"textLines":1,"bbox":[78,568,650,42]}
-{"kind":"notes","id":"nt/fy8mwx","slide":1,"text":"Challenge source: Hackathon -3 Building Your High School Portfolio (1).pdf, supplied by the user."}
-{"kind":"slide","id":"sl/ivzlvs","slide":2,"title":"The memory gap","textShapes":8}
-{"kind":"textbox","id":"sh/sjqxgn25","slide":2,"text":"The memory gap","textPreview":"The memory gap","textChars":14,"textLines":1,"bbox":[76,54,1120,62]}
-{"kind":"textbox","id":"sh/rihgni1k","slide":2,"text":"Students complete meaningful work, but the evidence gets scattered across four years.","textPreview":"Students complete meaningful work, but the evidence gets scattered across four years.","textChars":85,"textLines":1,"bbox":[78,118,1080,36]}
-{"kind":"shape","id":"sh/qhofedkz","slide":2,"bbox":[76,196,670,386]}
-{"kind":"textbox","id":"sh/5gfyl8je","slide":2,"text":"By senior year, names, dates, hours, and impact are easy to forget.","textPreview":"By senior year, names, dates, hours, and impact are easy to forget.","textChars":67,"textLines":1,"bbox":[112,236,590,96]}
-{"kind":"textbox","id":"sh/4f6xc329","slide":2,"text":"College applications and scholarship forms ask for specific details. Students often rebuild those details from old messages, calendars, and memory.","textPreview":"College applications and scholarship forms ask for specific details. Students often rebuild those details from old messages, calendars, a...","textChars":147,"textLines":1,"bbox":[112,366,570,120]}
-{"kind":"textbox","id":"sh/3exgjy1o","slide":2,"text":"The result","textPreview":"The result","textChars":10,"textLines":1,"bbox":[825,214,330,42]}
-{"kind":"textbox","id":"sh/idofatk3","slide":2,"text":"Incomplete applications\nUnverified service hours\nGeneric resume descriptions","textPreview":"Incomplete applications | Unverified service hours | Generic resume descriptions","textChars":76,"textLines":3,"bbox":[824,270,340,190]}
-{"kind":"textbox","id":"sh/pcjyxcjy","slide":2,"text":"Pathfolio fixes the problem while the experience is still fresh.","textPreview":"Pathfolio fixes the problem while the experience is still fresh.","textChars":64,"textLines":1,"bbox":[824,492,340,86]}
-{"kind":"textbox","id":"sh/obaho72d","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
-{"kind":"notes","id":"nt/ivzlvs","slide":2,"text":"Problem statement is based on page 2 of the supplied hackathon brief."}
-{"kind":"slide","id":"sl/4bfg7c","slide":3,"title":"Student experience","textShapes":9}
-{"kind":"textbox","id":"sh/3ulc3uh4","slide":3,"text":"Student experience","textPreview":"Student experience","textChars":18,"textLines":1,"bbox":[76,54,1120,62]}
-{"kind":"textbox","id":"sh/ovutwzy9","slide":3,"text":"A phone-sized workspace turns activities into a searchable four-year record.","textPreview":"A phone-sized workspace turns activities into a searchable four-year record.","textChars":76,"textLines":1,"bbox":[78,118,1080,36]}
-{"kind":"textbox","id":"sh/e5sbqpg7","slide":3,"text":"Record an experience","textPreview":"Record an experience","textChars":20,"textLines":1,"bbox":[530,198,590,40]}
-{"kind":"textbox","id":"sh/fq1szuhs","slide":3,"text":"Add the title, category, date, hours, and a short description.","textPreview":"Add the title, category, date, hours, and a short description.","textChars":62,"textLines":1,"bbox":[530,242,590,62]}
-{"kind":"textbox","id":"sh/gratszyd","slide":3,"text":"Find the right story","textPreview":"Find the right story","textChars":20,"textLines":1,"bbox":[530,334,590,40]}
-{"kind":"textbox","id":"sh/1s3u1kzy","slide":3,"text":"Search descriptions, filter by activity type, or sort by date and category.","textPreview":"Search descriptions, filter by activity type, or sort by date and category.","textChars":75,"textLines":1,"bbox":[530,378,590,64]}
-{"kind":"textbox","id":"sh/y1wb29gr","slide":3,"text":"Reuse the work","textPreview":"Reuse the work","textChars":14,"textLines":1,"bbox":[530,472,590,40]}
-{"kind":"textbox","id":"sh/zm5cbehw","slide":3,"text":"Track progress with badges, then export organized resume text when it is needed.","textPreview":"Track progress with badges, then export organized resume text when it is needed.","textChars":80,"textLines":1,"bbox":[530,516,590,68]}
-{"kind":"textbox","id":"sh/n61cz6xo","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
-{"kind":"image","id":"im/472pora9","slide":3,"name":"","geometry":"roundRect","alt":"Pathfolio student dashboard showing experiences, hours, badges, filters, and export controls","bbox":[96,170,365,500]}
-{"kind":"notes","id":"nt/4bfg7c","slide":3,"text":"Screenshot generated from the included Pathfolio Java application. Requirements source: supplied brief, pages 3 and 4."}
-{"kind":"slide","id":"sl/kznm08","slide":4,"title":"Counselor experience","textShapes":9}
-{"kind":"textbox","id":"sh/it4jaxsj","slide":4,"text":"Counselor experience","textPreview":"Counselor experience","textChars":20,"textLines":1,"bbox":[76,54,1120,62]}
-{"kind":"textbox","id":"sh/5wf2lsru","slide":4,"text":"Counselors review claims early instead of reconstructing a record during senior year.","textPreview":"Counselors review claims early instead of reconstructing a record during senior year.","textChars":85,"textLines":1,"bbox":[78,118,1080,36]}
-{"kind":"textbox","id":"sh/kvm1cnap","slide":4,"text":"Review queue","textPreview":"Review queue","textChars":12,"textLines":1,"bbox":[90,206,460,42]}
-{"kind":"textbox","id":"sh/7yxkn290","slide":4,"text":"Pending activities appear in one list with dates, hours, and student descriptions.","textPreview":"Pending activities appear in one list with dates, hours, and student descriptions.","textChars":82,"textLines":1,"bbox":[90,256,470,76]}
-{"kind":"textbox","id":"sh/6xojexsf","slide":4,"text":"One-click verification","textPreview":"One-click verification","textChars":22,"textLines":1,"bbox":[90,370,460,42]}
-{"kind":"textbox","id":"sh/t0f2pcr6","slide":4,"text":"A verified label tells students which entries are ready for official applications.","textPreview":"A verified label tells students which entries are ready for official applications.","textChars":82,"textLines":1,"bbox":[90,420,470,78]}
-{"kind":"textbox","id":"sh/sz61g7al","slide":4,"text":"Four-year overview","textPreview":"Four-year overview","textChars":18,"textLines":1,"bbox":[90,534,460,42]}
-{"kind":"textbox","id":"sh/f2xkrm9c","slide":4,"text":"The timeline makes missing years visible before they become an application problem.","textPreview":"The timeline makes missing years visible before they become an application problem.","textChars":83,"textLines":1,"bbox":[90,584,470,62]}
-{"kind":"textbox","id":"sh/8f29czup","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
-{"kind":"image","id":"im/jidw32hg","slide":4,"name":"","geometry":"roundRect","alt":"Pathfolio counselor dashboard showing pending reviews and verification progress","bbox":[700,170,365,500]}
-{"kind":"notes","id":"nt/kznm08","slide":4,"text":"Screenshot generated from the included Pathfolio Java application. Counselor interaction is required by page 3 of the supplied brief."}
-{"kind":"slide","id":"sl/441c7p","slide":5,"title":"Core application flow","textShapes":10}
-{"kind":"textbox","id":"sh/jm94rqxk","slide":5,"text":"Core application flow","textPreview":"Core application flow","textChars":21,"textLines":1,"bbox":[76,54,1120,62]}
-{"kind":"textbox","id":"sh/4nilkve5","slide":5,"text":"Each saved experience becomes searchable, reviewable, and ready for reuse.","textPreview":"Each saved experience becomes searchable, reviewable, and ready for reuse.","textChars":74,"textLines":1,"bbox":[78,118,1080,36]}
-{"kind":"textbox","id":"sh/5ormt0fq","slide":5,"text":"Student adds\nexperience","textPreview":"Student adds | experience","textChars":23,"textLines":2,"bbox":[70,282,180,108]}
-{"kind":"textbox","id":"sh/6p0nm5wb","slide":5,"text":"App validates\nrequired fields","textPreview":"App validates | required fields","textChars":29,"textLines":2,"bbox":[300,282,180,108]}
-{"kind":"textbox","id":"sh/rq94vaxg","slide":5,"text":"App saves and\nupdates totals","textPreview":"App saves and | updates totals","textChars":28,"textLines":2,"bbox":[530,282,180,108]}
-{"kind":"textbox","id":"sh/sri5ofe1","slide":5,"text":"Counselor\nverifies entry","textPreview":"Counselor | verifies entry","textChars":24,"textLines":2,"bbox":[760,282,180,108]}
-{"kind":"textbox","id":"sh/tsrmxkfm","slide":5,"text":"Student exports\nresume text","textPreview":"Student exports | resume text","textChars":27,"textLines":2,"bbox":[990,282,180,108]}
-{"kind":"shape","id":"sh/et0nqpw7","slide":5,"bbox":[0,0,0,0]}
-{"kind":"shape","id":"sh/fut4zads","slide":5,"bbox":[0,0,0,0]}
-{"kind":"shape","id":"sh/jmp0ji50","slide":5,"bbox":[0,0,0,0]}
-{"kind":"shape","id":"sh/ilgzadof","slide":5,"bbox":[0,0,0,0]}
-{"kind":"textbox","id":"sh/5orilsn6","slide":5,"text":"If validation fails, the form stays open and highlights the missing or invalid field.","textPreview":"If validation fails, the form stays open and highlights the missing or invalid field.","textChars":85,"textLines":1,"bbox":[290,474,700,56]}
-{"kind":"textbox","id":"sh/4nyhcn6l","slide":5,"text":"All records remain on the student computer in the prototype.","textPreview":"All records remain on the student computer in the prototype.","textChars":60,"textLines":1,"bbox":[320,548,640,46]}
-{"kind":"textbox","id":"sh/vip0fy54","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
-{"kind":"notes","id":"nt/441c7p","slide":5,"text":"The flowchart documents the implemented Java application logic. Flowchart and core logic are required by pages 3 and 4 of the supplied brief."}
-{"kind":"slide","id":"sl/2wou85","slide":6,"title":"Search, filter, and sort logic","textShapes":9}
-{"kind":"textbox","id":"sh/atsre10j","slide":6,"text":"Search, filter, and sort logic","textPreview":"Search, filter, and sort logic","textChars":30,"textLines":1,"bbox":[76,54,1120,62]}
-{"kind":"textbox","id":"sh/xwjapgja","slide":6,"text":"A single pipeline transforms the saved list into the view the student requested.","textPreview":"A single pipeline transforms the saved list into the view the student requested.","textChars":80,"textLines":1,"bbox":[78,118,1080,36]}
-{"kind":"shape","id":"sh/wva9gbip","slide":6,"bbox":[72,182,730,432]}
-{"kind":"textbox","id":"sh/nqh8jm18","slide":6,"text":"INPUT query, selectedType, sortMode\n\nresults = all experiences\n\nFILTER results where\n  title or description contains query\n  and type matches selectedType\n\nSORT results by date or category\n\nDISPLAY results","textPreview":"INPUT query, selectedType, sortMode |  | results = all experiences |  | FILTER results where |   title or description contains query |   ...","textChars":205,"textLines":11,"bbox":[112,218,650,360]}
-{"kind":"textbox","id":"sh/mp8ra10n","slide":6,"text":"Computer science concepts","textPreview":"Computer science concepts","textChars":25,"textLines":1,"bbox":[860,198,340,42]}
-{"kind":"textbox","id":"sh/9szqlwje","slide":6,"text":"Data model","textPreview":"Data model","textChars":10,"textLines":1,"bbox":[860,270,300,36]}
-{"kind":"textbox","id":"sh/8rq9crit","slide":6,"text":"Each experience is one structured record with a category, date, hours, description, and verification status.","textPreview":"Each experience is one structured record with a category, date, hours, description, and verification status.","textChars":108,"textLines":1,"bbox":[860,310,330,102]}
-{"kind":"textbox","id":"sh/z2h8fm1w","slide":6,"text":"Algorithms","textPreview":"Algorithms","textChars":10,"textLines":1,"bbox":[860,444,300,36]}
-{"kind":"textbox","id":"sh/y18r6h0r","slide":6,"text":"Predicate filters remove nonmatches. Comparators order the remaining records. Aggregation calculates total hours and badge progress.","textPreview":"Predicate filters remove nonmatches. Comparators order the remaining records. Aggregation calculates total hours and badge progress.","textChars":132,"textLines":1,"bbox":[860,484,330,116]}
-{"kind":"textbox","id":"sh/gv2xgzyd","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
-{"kind":"notes","id":"nt/2wou85","slide":6,"text":"Pseudocode reflects PortfolioService.find in the included Java source. The CS concept requirement appears on page 3 of the supplied brief."}
-{"kind":"slide","id":"sl/1noz3b","slide":7,"title":"Realistic now, expandable later","textShapes":8}
-{"kind":"textbox","id":"sh/jut8f2t4","slide":7,"text":"Realistic now, expandable later","textPreview":"Realistic now, expandable later","textChars":31,"textLines":1,"bbox":[76,54,1120,62]}
-{"kind":"textbox","id":"sh/kv2p87ap","slide":7,"text":"The prototype works with standard Java and keeps the school rollout path simple.","textPreview":"The prototype works with standard Java and keeps the school rollout path simple.","textChars":80,"textLines":1,"bbox":[78,118,1080,36]}
-{"kind":"textbox","id":"sh/lwbqhcra","slide":7,"text":"Working prototype","textPreview":"Working prototype","textChars":17,"textLines":1,"bbox":[94,202,460,46]}
-{"kind":"textbox","id":"sh/6xkrahsv","slide":7,"text":"Add experiences and keep them between sessions\n\nSearch, filter, and sort the portfolio\n\nTrack hours, badges, and verification\n\nExport resume-ready text","textPreview":"Add experiences and keep them between sessions |  | Search, filter, and sort the portfolio |  | Track hours, badges, and verification |  ...","textChars":151,"textLines":7,"bbox":[94,278,500,280]}
-{"kind":"textbox","id":"sh/7yt8jm9g","slide":7,"text":"School rollout","textPreview":"School rollout","textChars":14,"textLines":1,"bbox":[704,202,460,46]}
-{"kind":"textbox","id":"sh/8z29cra1","slide":7,"text":"Move local records to a school database\n\nUse student and counselor sign-in\n\nAttach evidence when a school requires it\n\nGenerate formatted PDF resumes","textPreview":"Move local records to a school database |  | Use student and counselor sign-in |  | Attach evidence when a school requires it |  | Genera...","textChars":149,"textLines":7,"bbox":[704,278,500,280]}
-{"kind":"textbox","id":"sh/t0vqlwrm","slide":7,"text":"Pathfolio gives every experience a place before the details disappear.","textPreview":"Pathfolio gives every experience a place before the details disappear.","textChars":70,"textLines":1,"bbox":[172,612,940,54]}
-{"kind":"textbox","id":"sh/m107ydsr","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
-{"kind":"notes","id":"nt/1noz3b","slide":7,"text":"Implementation details are drawn from the included Java source. The solution stays within the brief's high-school-level feasibility requirement."}
+{"kind":"deck","id":"pr/pfp8id","name":"Deck"}
+{"kind":"layout","layoutId":"e8c3402b-54c3-40d5-a97c-84bb5b562bfc","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"d5b7f3d2-602c-47f2-bafa-5753e1c9bb24","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/pif0f7","slide":1,"title":"CSNHS 26-27 HACKATHON","textShapes":6}
+{"kind":"textbox","id":"sh/kvqlgb69","slide":1,"text":"CSNHS 26-27 HACKATHON","textPreview":"CSNHS 26-27 HACKATHON","textChars":21,"textLines":1,"bbox":[78,112,560,34]}
+{"kind":"textbox","id":"sh/zux4765o","slide":1,"text":"Pathfolio","textPreview":"Pathfolio","textChars":9,"textLines":1,"bbox":[72,176,730,112]}
+{"kind":"textbox","id":"sh/yto3e1o3","slide":1,"text":"A high school experience tracker","textPreview":"A high school experience tracker","textChars":32,"textLines":1,"bbox":[78,298,700,50]}
+{"kind":"textbox","id":"sh/xsfm5wni","slide":1,"text":"Capture the details now. Use them when applications begin.","textPreview":"Capture the details now. Use them when applications begin.","textChars":58,"textLines":1,"bbox":[78,382,650,84]}
+{"kind":"textbox","id":"sh/c76lcr6d","slide":1,"text":"WORKING JAVA DEMO","textPreview":"WORKING JAVA DEMO","textChars":17,"textLines":1,"bbox":[78,514,220,38]}
+{"kind":"textbox","id":"sh/b6xk3m5s","slide":1,"text":"Student view + counselor overview + resume export","textPreview":"Student view + counselor overview + resume export","textChars":49,"textLines":1,"bbox":[78,568,650,42]}
+{"kind":"notes","id":"nt/pif0f7","slide":1,"text":"Challenge source: Hackathon -3 Building Your High School Portfolio (1).pdf, supplied by the user."}
+{"kind":"slide","id":"sl/yd46uy","slide":2,"title":"The memory gap","textShapes":8}
+{"kind":"textbox","id":"sh/xwve9kjm","slide":2,"text":"The memory gap","textPreview":"The memory gap","textChars":14,"textLines":1,"bbox":[76,54,1120,62]}
+{"kind":"textbox","id":"sh/at4vy50b","slide":2,"text":"Students complete meaningful work, but the evidence gets scattered across four years.","textPreview":"Students complete meaningful work, but the evidence gets scattered across four years.","textChars":85,"textLines":1,"bbox":[78,118,1080,36]}
+{"kind":"shape","id":"sh/budw7a1w","slide":2,"bbox":[76,196,670,386]}
+{"kind":"textbox","id":"sh/kj6d4zid","slide":2,"text":"By senior year, names, dates, hours, and impact are easy to forget.","textPreview":"By senior year, names, dates, hours, and impact are easy to forget.","textChars":67,"textLines":1,"bbox":[112,236,590,96]}
+{"kind":"textbox","id":"sh/lkfedkjy","slide":2,"text":"College applications and scholarship forms ask for specific details. Students often rebuild those details from old messages, calendars, and memory.","textPreview":"College applications and scholarship forms ask for specific details. Students often rebuild those details from old messages, calendars, a...","textChars":147,"textLines":1,"bbox":[112,366,570,120]}
+{"kind":"textbox","id":"sh/yx4v2p07","slide":2,"text":"The result","textPreview":"The result","textChars":10,"textLines":1,"bbox":[825,214,330,42]}
+{"kind":"textbox","id":"sh/jydwbu1s","slide":2,"text":"Incomplete applications\nMissing service hours\nGeneric resume descriptions","textPreview":"Incomplete applications | Missing service hours | Generic resume descriptions","textChars":73,"textLines":3,"bbox":[824,270,340,190]}
+{"kind":"textbox","id":"sh/0n2dsvit","slide":2,"text":"Pathfolio fixes the problem while the experience is still fresh.","textPreview":"Pathfolio fixes the problem while the experience is still fresh.","textChars":64,"textLines":1,"bbox":[824,492,340,86]}
+{"kind":"textbox","id":"sh/1obe10je","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
+{"kind":"notes","id":"nt/yd46uy","slide":2,"text":"Problem statement is based on page 2 of the supplied hackathon brief."}
+{"kind":"slide","id":"sl/vi0pkh","slide":3,"title":"Student experience","textShapes":9}
+{"kind":"textbox","id":"sh/kvq9sbq1","slide":3,"text":"Student experience","textPreview":"Student experience","textChars":18,"textLines":1,"bbox":[76,54,1120,62]}
+{"kind":"textbox","id":"sh/juh8j6pg","slide":3,"text":"A phone-sized workspace turns activities into a sortable four-year record.","textPreview":"A phone-sized workspace turns activities into a sortable four-year record.","textChars":74,"textLines":1,"bbox":[78,118,1080,36]}
+{"kind":"textbox","id":"sh/xsfqhw7a","slide":3,"text":"Record an experience","textPreview":"Record an experience","textChars":20,"textLines":1,"bbox":[530,198,590,40]}
+{"kind":"textbox","id":"sh/wr69orqp","slide":3,"text":"Add the title, category, date, hours, and a short description.","textPreview":"Add the title, category, date, hours, and a short description.","textChars":62,"textLines":1,"bbox":[530,242,590,62]}
+{"kind":"textbox","id":"sh/vqx8f6pk","slide":3,"text":"Choose the order","textPreview":"Choose the order","textChars":16,"textLines":1,"bbox":[530,334,590,40]}
+{"kind":"textbox","id":"sh/aporm18z","slide":3,"text":"Sort the full portfolio by newest, oldest, or activity category.","textPreview":"Sort the full portfolio by newest, oldest, or activity category.","textChars":64,"textLines":1,"bbox":[530,378,590,64]}
+{"kind":"textbox","id":"sh/9ofqdw7e","slide":3,"text":"Reuse the work","textPreview":"Reuse the work","textChars":14,"textLines":1,"bbox":[530,472,590,40]}
+{"kind":"textbox","id":"sh/8n69krqt","slide":3,"text":"Automatic hour totals stay visible, and the app exports organized resume text.","textPreview":"Automatic hour totals stay visible, and the app exports organized resume text.","textChars":78,"textLines":1,"bbox":[530,516,590,68]}
+{"kind":"textbox","id":"sh/yxwradc7","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
+{"kind":"image","id":"im/7udozq5k","slide":3,"name":"","geometry":"roundRect","alt":"Pathfolio student dashboard showing experiences, automatic hours, sorting, and resume export","bbox":[96,170,365,500]}
+{"kind":"notes","id":"nt/vi0pkh","slide":3,"text":"Screenshot generated from the included Pathfolio Java application. Requirements source: supplied brief, pages 3 and 4."}
+{"kind":"slide","id":"sl/0muf2d","slide":4,"title":"Counselor experience","textShapes":9}
+{"kind":"textbox","id":"sh/gfidwvml","slide":4,"text":"Counselor experience","textPreview":"Counselor experience","textChars":20,"textLines":1,"bbox":[76,54,1120,62]}
+{"kind":"textbox","id":"sh/fe9cnq50","slide":4,"text":"Counselors can read the portfolio and see how it develops across high school.","textPreview":"Counselors can read the portfolio and see how it develops across high school.","textChars":77,"textLines":1,"bbox":[78,118,1080,36]}
+{"kind":"textbox","id":"sh/ud0vu54f","slide":4,"text":"Four-year overview","textPreview":"Four-year overview","textChars":18,"textLines":1,"bbox":[90,206,460,42]}
+{"kind":"textbox","id":"sh/pkbutkn2","slide":4,"text":"The year-by-year summary makes missing periods easy to notice.","textPreview":"The year-by-year summary makes missing periods easy to notice.","textChars":62,"textLines":1,"bbox":[90,256,470,76]}
+{"kind":"textbox","id":"sh/4j2d0fmh","slide":4,"text":"Automatic hour total","textPreview":"Automatic hour total","textChars":20,"textLines":1,"bbox":[90,370,460,42]}
+{"kind":"textbox","id":"sh/3itcra5w","slide":4,"text":"The dashboard adds activity hours and shows the total at a glance.","textPreview":"The dashboard adds activity hours and shows the total at a glance.","textChars":66,"textLines":1,"bbox":[90,420,470,78]}
+{"kind":"textbox","id":"sh/2h0vy54b","slide":4,"text":"Recent experiences","textPreview":"Recent experiences","textChars":18,"textLines":1,"bbox":[90,534,460,42]}
+{"kind":"textbox","id":"sh/5o7uhgny","slide":4,"text":"Counselors can read the latest titles, dates, hours, and descriptions.","textPreview":"Counselors can read the latest titles, dates, hours, and descriptions.","textChars":70,"textLines":1,"bbox":[90,584,470,62]}
+{"kind":"textbox","id":"sh/u9wz6t47","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
+{"kind":"image","id":"im/l83ylwn6","slide":4,"name":"","geometry":"roundRect","alt":"Pathfolio counselor dashboard showing a four-year overview, total hours, and recent experiences","bbox":[700,170,365,500]}
+{"kind":"notes","id":"nt/0muf2d","slide":4,"text":"Screenshot generated from the included Pathfolio Java application. Counselor interaction is required by page 3 of the supplied brief."}
+{"kind":"slide","id":"sl/fdqj29","slide":5,"title":"Core application flow","textShapes":10}
+{"kind":"textbox","id":"sh/i90vy9sn","slide":5,"text":"Core application flow","textPreview":"Core application flow","textChars":21,"textLines":1,"bbox":[76,54,1120,62]}
+{"kind":"textbox","id":"sh/5cre94be","slide":5,"text":"Each new experience updates the hour total and joins the sortable portfolio.","textPreview":"Each new experience updates the hour total and joins the sortable portfolio.","textChars":76,"textLines":1,"bbox":[78,118,1080,36]}
+{"kind":"textbox","id":"sh/kbix0zat","slide":5,"text":"Student adds\nexperience","textPreview":"Student adds | experience","textChars":23,"textLines":2,"bbox":[70,282,180,108]}
+{"kind":"textbox","id":"sh/7e9wbetk","slide":5,"text":"App validates\nrequired fields","textPreview":"App validates | required fields","textChars":29,"textLines":2,"bbox":[300,282,180,108]}
+{"kind":"textbox","id":"sh/6d0f29sz","slide":5,"text":"App adds entry\nand totals hours","textPreview":"App adds entry | and totals hours","textChars":31,"textLines":2,"bbox":[530,282,180,108]}
+{"kind":"textbox","id":"sh/tgbedoba","slide":5,"text":"Counselor views\nfour-year overview","textPreview":"Counselor views | four-year overview","textChars":34,"textLines":2,"bbox":[760,282,180,108]}
+{"kind":"textbox","id":"sh/sfix4ja5","slide":5,"text":"Student sorts\nor exports","textPreview":"Student sorts | or exports","textChars":24,"textLines":2,"bbox":[990,282,180,108]}
+{"kind":"shape","id":"sh/f2twfetg","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/uhkf6tsv","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/grex4vi5","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/hcnex0zq","slide":5,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/upwf2l0z","slide":5,"text":"If validation fails, the form stays open and highlights the missing or invalid field.","textPreview":"If validation fails, the form stays open and highlights the missing or invalid field.","textChars":85,"textLines":1,"bbox":[290,474,700,56]}
+{"kind":"textbox","id":"sh/fq5wvqhk","slide":5,"text":"New entries remain available for the current app session.","textPreview":"New entries remain available for the current app session.","textChars":57,"textLines":1,"bbox":[320,548,640,46]}
+{"kind":"textbox","id":"sh/4fyxsvih","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
+{"kind":"notes","id":"nt/fdqj29","slide":5,"text":"The flowchart documents the implemented Java application logic. Flowchart and core logic are required by pages 3 and 4 of the supplied brief."}
+{"kind":"slide","id":"sl/46s17z","slide":6,"title":"Sorting and hour-total logic","textShapes":9}
+{"kind":"textbox","id":"sh/ryxs32po","slide":6,"text":"Sorting and hour-total logic","textPreview":"Sorting and hour-total logic","textChars":28,"textLines":1,"bbox":[76,54,1120,62]}
+{"kind":"textbox","id":"sh/sz6tc769","slide":6,"text":"Comparators change the record order, while aggregation calculates the hours.","textPreview":"Comparators change the record order, while aggregation calculates the hours.","textChars":76,"textLines":1,"bbox":[78,118,1080,36]}
+{"kind":"shape","id":"sh/t0za5s7u","slide":6,"bbox":[72,182,730,432]}
+{"kind":"textbox","id":"sh/e18bexof","slide":6,"text":"INPUT sortMode\n\nresults = all experiences\n\nIF sortMode is NEWEST\n  SORT results by date descending\nELSE IF sortMode is OLDEST\n  SORT results by date ascending\nELSE\n  SORT results by category\n\ntotalHours = SUM each experience's hours\nDISPLAY results and totalHours","textPreview":"INPUT sortMode |  | results = all experiences |  | IF sortMode is NEWEST |   SORT results by date descending | ELSE IF sortMode is OLDEST...","textChars":263,"textLines":13,"bbox":[112,218,650,360]}
+{"kind":"textbox","id":"sh/fmhs72p0","slide":6,"text":"Computer science concepts","textPreview":"Computer science concepts","textChars":25,"textLines":1,"bbox":[860,198,340,42]}
+{"kind":"textbox","id":"sh/gnqtg76l","slide":6,"text":"Data model","textPreview":"Data model","textChars":10,"textLines":1,"bbox":[860,270,300,36]}
+{"kind":"textbox","id":"sh/1oza9c76","slide":6,"text":"Each experience is one structured record with a category, date, hours, and description.","textPreview":"Each experience is one structured record with a category, date, hours, and description.","textChars":87,"textLines":1,"bbox":[860,310,330,102]}
+{"kind":"textbox","id":"sh/u54r2dob","slide":6,"text":"Algorithms","textPreview":"Algorithms","textChars":10,"textLines":1,"bbox":[860,444,300,36]}
+{"kind":"textbox","id":"sh/vqdsvipw","slide":6,"text":"Comparators order the records. Aggregation adds the hours from every experience.","textPreview":"Comparators order the records. Aggregation adds the hours from every experience.","textChars":80,"textLines":1,"bbox":[860,484,330,116]}
+{"kind":"textbox","id":"sh/zylg7uh4","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
+{"kind":"notes","id":"nt/46s17z","slide":6,"text":"Pseudocode reflects PortfolioService.sorted and PortfolioService.totalHours in the included Java source. The CS concept requirement appears on page 3 of the supplied brief."}
+{"kind":"slide","id":"sl/9makoa","slide":7,"title":"A focused prototype","textShapes":8}
+{"kind":"textbox","id":"sh/cb6p0byl","slide":7,"text":"A focused prototype","textPreview":"A focused prototype","textChars":19,"textLines":1,"bbox":[76,54,1120,62]}
+{"kind":"textbox","id":"sh/bax876x0","slide":7,"text":"The simplified app keeps only the requested enhancements and the required user views.","textPreview":"The simplified app keeps only the requested enhancements and the required user views.","textChars":85,"textLines":1,"bbox":[78,118,1080,36]}
+{"kind":"textbox","id":"sh/a9o7y1gv","slide":7,"text":"Working prototype","textPreview":"Working prototype","textChars":17,"textLines":1,"bbox":[94,202,460,46]}
+{"kind":"textbox","id":"sh/lgzqd0fi","slide":7,"text":"Add experiences during the current session\n\nSort by newest, oldest, or category\n\nCalculate total hours automatically\n\nExport resume-ready text\n\nShow a four-year counselor overview","textPreview":"Add experiences during the current session |  | Sort by newest, oldest, or category |  | Calculate total hours automatically |  | Export ...","textChars":179,"textLines":9,"bbox":[94,278,500,280]}
+{"kind":"textbox","id":"sh/kfq94vyx","slide":7,"text":"Implementation","textPreview":"Implementation","textChars":14,"textLines":1,"bbox":[704,202,460,46]}
+{"kind":"textbox","id":"sh/zeh8bqxc","slide":7,"text":"Standard Java Swing interface\n\nIn-memory demo records\n\nNo external libraries\n\nRuns from a single JAR\n\nStudent and counselor views","textPreview":"Standard Java Swing interface |  | In-memory demo records |  | No external libraries |  | Runs from a single JAR |  | Student and counsel...","textChars":129,"textLines":9,"bbox":[704,278,500,280]}
+{"kind":"textbox","id":"sh/yd872lgr","slide":7,"text":"Pathfolio gives every experience a place before the details disappear.","textPreview":"Pathfolio gives every experience a place before the details disappear.","textChars":70,"textLines":1,"bbox":[172,612,940,54]}
+{"kind":"textbox","id":"sh/94jqh0fe","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1160,666,54,24]}
+{"kind":"notes","id":"nt/9makoa","slide":7,"text":"Implementation details are drawn from the included Java source. The solution stays within the brief's high-school-level feasibility requirement."}

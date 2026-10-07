@@ -7,7 +7,7 @@ const workspaceDir = "/Users/hunteryau/VSC/Java/hackthon1";
 const SKILL_DIR = "/Users/hunteryau/.codex/plugins/cache/openai-primary-runtime/presentations/26.909.11814/skills/presentations";
 const RUNTIME_PYTHON = "/Users/hunteryau/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3.12";
 const TMP_DIR = path.join(workspaceDir, ".codex-deck-build");
-const FINAL_PPTX = path.join(workspaceDir, "output/presentation/Pathfolio-Hackathon-Presentation-Final.pptx");
+const FINAL_PPTX = path.join(workspaceDir, "output/presentation/Pathfolio-Hackathon-Presentation-Submission.pptx");
 const { resolvePresentationFont, finalizePresentation } = await import(
   pathToFileURL(path.join(SKILL_DIR, "container_tools/artifact_tool_utils.mjs")).href,
 );
@@ -110,7 +110,6 @@ function addLabel(slide, text, position, color) {
     { left: 78, top: 382, width: 650, height: 84 }, 22,
     { color: colors.muted, autoFit: "none" });
   addLabel(slide, "WORKING JAVA DEMO", { left: 78, top: 514, width: 220, height: 38 }, colors.teal);
-  addText(slide, "Student view + counselor review + resume export",
     { left: 78, top: 568, width: 650, height: 42 }, 17,
     { color: colors.muted, autoFit: "none" });
   slide.speakerNotes.textFrame.setText("Challenge source: Hackathon -3 Building Your High School Portfolio (1).pdf, supplied by the user.");
@@ -131,7 +130,7 @@ function addLabel(slide, text, position, color) {
     { color: colors.muted, autoFit: "none" });
   addText(slide, "The result", { left: 825, top: 214, width: 330, height: 42 }, 17,
     { bold: true, color: colors.orange, autoFit: "none" });
-  addText(slide, "Incomplete applications\nUnverified service hours\nGeneric resume descriptions",
+  addText(slide, "Incomplete applications\nMissing service hours\nGeneric resume descriptions",
     { left: 824, top: 270, width: 340, height: 190 }, 25,
     { bold: true, color: colors.ink, autoFit: "none" });
   addText(slide, "Pathfolio fixes the problem while the experience is still fresh.",
@@ -145,11 +144,11 @@ function addLabel(slide, text, position, color) {
 {
   const slide = presentation.slides.add();
   addBackground(slide);
-  addTitle(slide, "Student experience", "A phone-sized workspace turns activities into a searchable four-year record.");
+  addTitle(slide, "Student experience", "A phone-sized workspace turns activities into a sortable four-year record.");
   slide.images.add({
     blob: studentBytes,
     contentType: "image/png",
-    alt: "Pathfolio student dashboard showing experiences, hours, badges, filters, and export controls",
+    alt: "Pathfolio student dashboard showing experiences, automatic hours, sorting, and resume export",
     fit: "contain",
     geometry: "roundRect",
     borderRadius: "rounded-xl",
@@ -159,13 +158,13 @@ function addLabel(slide, text, position, color) {
     { bold: true, color: colors.orange, autoFit: "none" });
   addText(slide, "Add the title, category, date, hours, and a short description.",
     { left: 530, top: 242, width: 590, height: 62 }, 19, { color: colors.muted, autoFit: "none" });
-  addText(slide, "Find the right story", { left: 530, top: 334, width: 590, height: 40 }, 24,
+  addText(slide, "Choose the order", { left: 530, top: 334, width: 590, height: 40 }, 24,
     { bold: true, color: colors.blue, autoFit: "none" });
-  addText(slide, "Search descriptions, filter by activity type, or sort by date and category.",
+  addText(slide, "Sort the full portfolio by newest, oldest, or activity category.",
     { left: 530, top: 378, width: 590, height: 64 }, 19, { color: colors.muted, autoFit: "none" });
   addText(slide, "Reuse the work", { left: 530, top: 472, width: 590, height: 40 }, 24,
     { bold: true, color: colors.teal, autoFit: "none" });
-  addText(slide, "Track progress with badges, then export organized resume text when it is needed.",
+  addText(slide, "Automatic hour totals stay visible, and the app exports organized resume text.",
     { left: 530, top: 516, width: 590, height: 68 }, 19, { color: colors.muted, autoFit: "none" });
   addFooter(slide, 3);
   slide.speakerNotes.textFrame.setText("Screenshot generated from the included Pathfolio Java application. Requirements source: supplied brief, pages 3 and 4.");
@@ -175,23 +174,23 @@ function addLabel(slide, text, position, color) {
 {
   const slide = presentation.slides.add();
   addBackground(slide);
-  addTitle(slide, "Counselor experience", "Counselors review claims early instead of reconstructing a record during senior year.");
-  addText(slide, "Review queue", { left: 90, top: 206, width: 460, height: 42 }, 26,
+  addTitle(slide, "Counselor experience", "Counselors can read the portfolio and see how it develops across high school.");
+  addText(slide, "Four-year overview", { left: 90, top: 206, width: 460, height: 42 }, 26,
     { bold: true, color: colors.teal, autoFit: "none" });
-  addText(slide, "Pending activities appear in one list with dates, hours, and student descriptions.",
+  addText(slide, "The year-by-year summary makes missing periods easy to notice.",
     { left: 90, top: 256, width: 470, height: 76 }, 20, { color: colors.muted, autoFit: "none" });
-  addText(slide, "One-click verification", { left: 90, top: 370, width: 460, height: 42 }, 26,
+  addText(slide, "Automatic hour total", { left: 90, top: 370, width: 460, height: 42 }, 26,
     { bold: true, color: colors.orange, autoFit: "none" });
-  addText(slide, "A verified label tells students which entries are ready for official applications.",
+  addText(slide, "The dashboard adds activity hours and shows the total at a glance.",
     { left: 90, top: 420, width: 470, height: 78 }, 20, { color: colors.muted, autoFit: "none" });
-  addText(slide, "Four-year overview", { left: 90, top: 534, width: 460, height: 42 }, 26,
+  addText(slide, "Recent experiences", { left: 90, top: 534, width: 460, height: 42 }, 26,
     { bold: true, color: colors.blue, autoFit: "none" });
-  addText(slide, "The timeline makes missing years visible before they become an application problem.",
+  addText(slide, "Counselors can read the latest titles, dates, hours, and descriptions.",
     { left: 90, top: 584, width: 470, height: 62 }, 20, { color: colors.muted, autoFit: "none" });
   slide.images.add({
     blob: counselorBytes,
     contentType: "image/png",
-    alt: "Pathfolio counselor dashboard showing pending reviews and verification progress",
+    alt: "Pathfolio counselor dashboard showing a four-year overview, total hours, and recent experiences",
     fit: "contain",
     geometry: "roundRect",
     borderRadius: "rounded-xl",
@@ -205,7 +204,7 @@ function addLabel(slide, text, position, color) {
 {
   const slide = presentation.slides.add();
   addBackground(slide);
-  addTitle(slide, "Core application flow", "Each saved experience becomes searchable, reviewable, and ready for reuse.");
+  addTitle(slide, "Core application flow", "Each new experience updates the hour total and joins the sortable portfolio.");
   const positions = [
     { left: 70, top: 282, width: 180, height: 108 },
     { left: 300, top: 282, width: 180, height: 108 },
@@ -213,7 +212,7 @@ function addLabel(slide, text, position, color) {
     { left: 760, top: 282, width: 180, height: 108 },
     { left: 990, top: 282, width: 180, height: 108 },
   ];
-  const labels = ["Student adds\nexperience", "App validates\nrequired fields", "App saves and\nupdates totals", "Counselor\nverifies entry", "Student exports\nresume text"];
+  const labels = ["Student adds\nexperience", "App validates\nrequired fields", "App adds entry\nand totals hours", "Counselor views\nfour-year overview", "Student sorts\nor exports"];
   const fills = [colors.orange, colors.yellow, colors.blue, colors.teal, colors.pink];
   const textColors = [colors.white, colors.ink, colors.white, colors.white, colors.ink];
   const boxes = positions.map((position, index) => {
@@ -234,7 +233,7 @@ function addLabel(slide, text, position, color) {
   addText(slide, "If validation fails, the form stays open and highlights the missing or invalid field.",
     { left: 290, top: 474, width: 700, height: 56 }, 20,
     { color: colors.muted, alignment: "center", autoFit: "none" });
-  addText(slide, "All records remain on the student computer in the prototype.",
+  addText(slide, "New entries remain available for the current app session.",
     { left: 320, top: 548, width: 640, height: 46 }, 18,
     { bold: true, color: colors.teal, alignment: "center", autoFit: "none" });
   addFooter(slide, 5);
@@ -245,41 +244,41 @@ function addLabel(slide, text, position, color) {
 {
   const slide = presentation.slides.add();
   addBackground(slide);
-  addTitle(slide, "Search, filter, and sort logic", "A single pipeline transforms the saved list into the view the student requested.");
+  addTitle(slide, "Sorting and hour-total logic", "Comparators change the record order, while aggregation calculates the hours.");
   addPanel(slide, { left: 72, top: 182, width: 730, height: 432 }, "#272322", "#272322");
   addText(slide,
-    "INPUT query, selectedType, sortMode\n\nresults = all experiences\n\nFILTER results where\n  title or description contains query\n  and type matches selectedType\n\nSORT results by date or category\n\nDISPLAY results",
+    "INPUT sortMode\n\nresults = all experiences\n\nIF sortMode is NEWEST\n  SORT results by date descending\nELSE IF sortMode is OLDEST\n  SORT results by date ascending\nELSE\n  SORT results by category\n\ntotalHours = SUM each experience's hours\nDISPLAY results and totalHours",
     { left: 112, top: 218, width: 650, height: 360 }, 22,
     { color: "#FFFDF8", autoFit: "none" });
   addText(slide, "Computer science concepts", { left: 860, top: 198, width: 340, height: 42 }, 24,
     { bold: true, color: colors.orange, autoFit: "none" });
   addText(slide, "Data model", { left: 860, top: 270, width: 300, height: 36 }, 19,
     { bold: true, color: colors.ink, autoFit: "none" });
-  addText(slide, "Each experience is one structured record with a category, date, hours, description, and verification status.",
+  addText(slide, "Each experience is one structured record with a category, date, hours, and description.",
     { left: 860, top: 310, width: 330, height: 102 }, 17, { color: colors.muted, autoFit: "none" });
   addText(slide, "Algorithms", { left: 860, top: 444, width: 300, height: 36 }, 19,
     { bold: true, color: colors.ink, autoFit: "none" });
-  addText(slide, "Predicate filters remove nonmatches. Comparators order the remaining records. Aggregation calculates total hours and badge progress.",
+  addText(slide, "Comparators order the records. Aggregation adds the hours from every experience.",
     { left: 860, top: 484, width: 330, height: 116 }, 17, { color: colors.muted, autoFit: "none" });
   addFooter(slide, 6);
-  slide.speakerNotes.textFrame.setText("Pseudocode reflects PortfolioService.find in the included Java source. The CS concept requirement appears on page 3 of the supplied brief.");
+  slide.speakerNotes.textFrame.setText("Pseudocode reflects PortfolioService.sorted and PortfolioService.totalHours in the included Java source. The CS concept requirement appears on page 3 of the supplied brief.");
 }
 
 // 7. Feasibility
 {
   const slide = presentation.slides.add();
   addBackground(slide);
-  addTitle(slide, "Realistic now, expandable later", "The prototype works with standard Java and keeps the school rollout path simple.");
+  addTitle(slide, "A focused prototype", "The simplified app keeps only the requested enhancements and the required user views.");
   addText(slide, "Working prototype", { left: 94, top: 202, width: 460, height: 46 }, 28,
     { bold: true, color: colors.teal, autoFit: "none" });
   addText(slide,
-    "Add experiences and keep them between sessions\n\nSearch, filter, and sort the portfolio\n\nTrack hours, badges, and verification\n\nExport resume-ready text",
+    "Add experiences during the current session\n\nSort by newest, oldest, or category\n\nCalculate total hours automatically\n\nExport resume-ready text\n\nShow a four-year counselor overview",
     { left: 94, top: 278, width: 500, height: 280 }, 21,
     { color: colors.ink, autoFit: "none" });
-  addText(slide, "School rollout", { left: 704, top: 202, width: 460, height: 46 }, 28,
+  addText(slide, "Implementation", { left: 704, top: 202, width: 460, height: 46 }, 28,
     { bold: true, color: colors.orange, autoFit: "none" });
   addText(slide,
-    "Move local records to a school database\n\nUse student and counselor sign-in\n\nAttach evidence when a school requires it\n\nGenerate formatted PDF resumes",
+    "Standard Java Swing interface\n\nIn-memory demo records\n\nNo external libraries\n\nRuns from a single JAR\n\nStudent and counselor views",
     { left: 704, top: 278, width: 500, height: 280 }, 21,
     { color: colors.ink, autoFit: "none" });
   addText(slide, "Pathfolio gives every experience a place before the details disappear.",
@@ -311,7 +310,7 @@ const result = await finalizePresentation({
   ],
   fontPolicy: { basis: "design", families: [font] },
   verifyArtifactToolImport: true,
-  receiptPath: path.join(stagingDir, "Pathfolio-Hackathon-Presentation-Final.validation.json"),
+  receiptPath: path.join(stagingDir, "Pathfolio-Hackathon-Presentation-Submission.validation.json"),
 });
 
 console.log(JSON.stringify({ font, finalPath: FINAL_PPTX, result }, null, 2));

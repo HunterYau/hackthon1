@@ -1,7 +1,6 @@
 package hackathon1.ui;
 
 import hackathon1.model.Experience;
-import hackathon1.model.ExperienceType;
 import hackathon1.service.PortfolioService;
 
 import javax.swing.BorderFactory;
@@ -14,12 +13,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JProgressBar;
 import javax.swing.JScrollPane;
-import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -107,30 +102,16 @@ public class PortfolioAppPanel extends JPanel {
         content.add(sectionHeading("Hi, Maya!", "You are building a story worth remembering."));
         content.add(Box.createVerticalStrut(12));
         content.add(statRow());
-        content.add(Box.createVerticalStrut(12));
-        content.add(badgeStrip());
         content.add(Box.createVerticalStrut(14));
 
-        JTextField search = new JTextField();
-        search.setToolTipText("Search titles and descriptions");
-        search.setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createTitledBorder("Search experiences"),
-                BorderFactory.createEmptyBorder(1, 5, 2, 5)));
-        JComboBox<String> type = new JComboBox<>();
-        type.addItem("All categories");
-        for (ExperienceType value : ExperienceType.values()) type.addItem(value.label());
         JComboBox<PortfolioService.SortMode> sort = new JComboBox<>(PortfolioService.SortMode.values());
 
-        JPanel controls = new JPanel(new BorderLayout(6, 6));
+        JPanel controls = new JPanel(new BorderLayout(8, 0));
         controls.setOpaque(false);
         controls.setAlignmentX(LEFT_ALIGNMENT);
-        controls.setMaximumSize(new Dimension(Integer.MAX_VALUE, 78));
-        controls.add(search, BorderLayout.NORTH);
-        JPanel selectors = new JPanel(new GridLayout(1, 2, 6, 0));
-        selectors.setOpaque(false);
-        selectors.add(type);
-        selectors.add(sort);
-        controls.add(selectors, BorderLayout.CENTER);
+        controls.setMaximumSize(new Dimension(Integer.MAX_VALUE, 42));
+        controls.add(Theme.label("Sort experiences", 12, Font.BOLD, Theme.MUTED), BorderLayout.WEST);
+        controls.add(sort, BorderLayout.CENTER);
         content.add(controls);
         content.add(Box.createVerticalStrut(10));
 
@@ -140,30 +121,15 @@ public class PortfolioAppPanel extends JPanel {
         list.setAlignmentX(LEFT_ALIGNMENT);
         list.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
         Runnable updateList = () -> {
-            ExperienceType selected = type.getSelectedIndex() == 0 ? null
-                    : ExperienceType.values()[type.getSelectedIndex() - 1];
-            List<Experience> items = service.find(search.getText(), selected,
-                    (PortfolioService.SortMode) sort.getSelectedItem());
+            List<Experience> items = service.sorted((PortfolioService.SortMode) sort.getSelectedItem());
             list.removeAll();
-            if (items.isEmpty()) {
-                JPanel empty = card();
-                empty.add(Theme.label("No experiences match this search.", 13, Font.PLAIN, Theme.MUTED));
-                list.add(empty);
-            } else {
-                for (Experience item : items) {
-                    list.add(experienceCard(item, false));
-                    list.add(Box.createVerticalStrut(8));
-                }
+            for (Experience item : items) {
+                list.add(experienceCard(item));
+                list.add(Box.createVerticalStrut(8));
             }
             list.revalidate();
             list.repaint();
         };
-        search.getDocument().addDocumentListener(new DocumentListener() {
-            public void insertUpdate(DocumentEvent event) { updateList.run(); }
-            public void removeUpdate(DocumentEvent event) { updateList.run(); }
-            public void changedUpdate(DocumentEvent event) { updateList.run(); }
-        });
-        type.addActionListener(event -> updateList.run());
         sort.addActionListener(event -> updateList.run());
         updateList.run();
         content.add(list);
@@ -197,13 +163,12 @@ public class PortfolioAppPanel extends JPanel {
     }
 
     private JPanel statRow() {
-        JPanel stats = new JPanel(new GridLayout(1, 3, 7, 0));
+        JPanel stats = new JPanel(new GridLayout(1, 2, 7, 0));
         stats.setOpaque(false);
         stats.setAlignmentX(LEFT_ALIGNMENT);
         stats.setMaximumSize(new Dimension(Integer.MAX_VALUE, 68));
         stats.add(statCard(Integer.toString(service.all().size()), "experiences", Theme.ORANGE));
         stats.add(statCard(PortfolioService.formatHours(service.totalHours()), "hours", Theme.TEAL));
-        stats.add(statCard(Long.toString(service.verifiedCount()), "verified", Theme.BLUE));
         return stats;
     }
 
@@ -219,24 +184,6 @@ public class PortfolioAppPanel extends JPanel {
         return card;
     }
 
-    private JPanel badgeStrip() {
-        JPanel panel = card();
-        panel.setLayout(new BorderLayout(8, 5));
-        panel.setAlignmentX(LEFT_ALIGNMENT);
-        panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 92));
-        panel.add(Theme.label("BADGES", 11, Font.BOLD, Theme.MUTED), BorderLayout.NORTH);
-        String badges = String.join("   ", service.badges());
-        panel.add(Theme.label("<html><body style='width:340px'>" + badges + "</body></html>",
-                11, Font.BOLD, Theme.INK), BorderLayout.CENTER);
-        JProgressBar progress = new JProgressBar(0, 5);
-        progress.setValue(service.all().size());
-        progress.setStringPainted(true);
-        progress.setString(Math.min(service.all().size(), 5) + " of 5 entries to next badge");
-        progress.setForeground(Theme.YELLOW);
-        panel.add(progress, BorderLayout.SOUTH);
-        return panel;
-    }
-
     private JPanel buildCounselorView() {
         JPanel page = Theme.paperPanel();
         page.setBackground(Theme.PAPER);
@@ -246,39 +193,18 @@ public class PortfolioAppPanel extends JPanel {
         JPanel content = new JPanel();
         content.setOpaque(false);
         content.setLayout(new BoxLayout(content, BoxLayout.Y_AXIS));
-        content.add(sectionHeading("Counselor review", "Maya Chen - Class of 2028"));
+        content.add(sectionHeading("Counselor overview", "Maya Chen - Class of 2028"));
         content.add(Box.createVerticalStrut(12));
 
         JPanel overview = card();
         overview.setLayout(new BorderLayout(8, 8));
-        JPanel facts = new JPanel(new GridLayout(1, 3));
+        JPanel facts = new JPanel(new GridLayout(1, 2));
         facts.setOpaque(false);
         facts.add(centeredFact(service.all().size() + "", "entries"));
-        facts.add(centeredFact(service.verifiedCount() + "", "verified"));
-        facts.add(centeredFact(service.pending().size() + "", "pending"));
+        facts.add(centeredFact(PortfolioService.formatHours(service.totalHours()), "total hours"));
         overview.add(facts, BorderLayout.NORTH);
-        JProgressBar completeness = new JProgressBar(0, Math.max(1, service.all().size()));
-        completeness.setValue((int) service.verifiedCount());
-        completeness.setForeground(Theme.TEAL);
-        completeness.setStringPainted(true);
-        completeness.setString("Portfolio verification progress");
-        overview.add(completeness, BorderLayout.SOUTH);
         content.add(overview);
         content.add(Box.createVerticalStrut(16));
-        content.add(Theme.label("NEEDS REVIEW", 12, Font.BOLD, Theme.MUTED));
-        content.add(Box.createVerticalStrut(7));
-
-        if (service.pending().isEmpty()) {
-            JPanel done = card();
-            done.add(Theme.label("Everything is verified.", 14, Font.BOLD, Theme.TEAL));
-            content.add(done);
-        } else {
-            for (Experience item : service.pending()) {
-                content.add(experienceCard(item, true));
-                content.add(Box.createVerticalStrut(8));
-            }
-        }
-        content.add(Box.createVerticalStrut(10));
         content.add(Theme.label("FOUR-YEAR OVERVIEW", 12, Font.BOLD, Theme.MUTED));
         content.add(Box.createVerticalStrut(7));
         JPanel timeline = card();
@@ -292,6 +218,13 @@ public class PortfolioAppPanel extends JPanel {
         timeline.add(Theme.label("Senior", 12, Font.BOLD, Theme.INK));
         timeline.add(Theme.label("Resume ready", 12, Font.PLAIN, Theme.MUTED));
         content.add(timeline);
+        content.add(Box.createVerticalStrut(16));
+        content.add(Theme.label("RECENT EXPERIENCES", 12, Font.BOLD, Theme.MUTED));
+        content.add(Box.createVerticalStrut(7));
+        for (Experience item : service.sorted(PortfolioService.SortMode.NEWEST).stream().limit(3).toList()) {
+            content.add(experienceCard(item));
+            content.add(Box.createVerticalStrut(8));
+        }
 
         JScrollPane scroll = new JScrollPane(content);
         scroll.setBorder(null);
@@ -316,7 +249,7 @@ public class PortfolioAppPanel extends JPanel {
         return panel;
     }
 
-    private JPanel experienceCard(Experience item, boolean withVerifyButton) {
+    private JPanel experienceCard(Experience item) {
         JPanel panel = card();
         panel.setLayout(new BorderLayout(10, 5));
 
@@ -327,22 +260,13 @@ public class PortfolioAppPanel extends JPanel {
         String meta = item.type().label() + "  -  "
                 + item.date().format(DateTimeFormatter.ofPattern("MMM d, yyyy"));
         if (item.hours() > 0) meta += "  -  " + PortfolioService.formatHours(item.hours()) + " hours";
-        if (!withVerifyButton) meta += item.verified() ? "  -  Verified" : "  -  Pending review";
         text.add(Theme.label(meta, 11, Font.PLAIN, Theme.MUTED));
-        JLabel description = Theme.label("<html><body style='width:205px'>" + escape(item.description())
+        JLabel description = Theme.label("<html><body style='width:330px'>" + escape(item.description())
                 + "</body></html>", 11, Font.PLAIN, Theme.INK);
         text.add(Box.createVerticalStrut(4));
         text.add(description);
         panel.add(text, BorderLayout.CENTER);
 
-        if (withVerifyButton) {
-            JButton verify = Theme.button("Verify", Theme.TEAL, Color.WHITE);
-            verify.addActionListener(event -> {
-                service.verify(item.id());
-                refreshCards(COUNSELOR);
-            });
-            panel.add(verify, BorderLayout.EAST);
-        }
         return panel;
     }
 

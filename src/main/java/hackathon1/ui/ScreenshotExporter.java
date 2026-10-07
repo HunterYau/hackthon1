@@ -19,7 +19,7 @@ public final class ScreenshotExporter {
         try {
             Files.createDirectories(outputDirectory);
             SwingUtilities.invokeAndWait(() -> {
-                PortfolioService service = new PortfolioService(new PortfolioRepository(null));
+                PortfolioService service = new PortfolioService(new PortfolioRepository());
                 PortfolioAppPanel panel = new PortfolioAppPanel(service);
                 render(panel, outputDirectory.resolve("student-view.png"));
                 panel.showRole("counselor");

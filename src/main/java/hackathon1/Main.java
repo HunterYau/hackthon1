@@ -25,8 +25,7 @@ public class Main {
                 // The cross-platform look and feel is bundled with Java; default is still usable.
             }
 
-            Path dataFile = Path.of(System.getProperty("user.home"), ".pathfolio", "experiences.tsv");
-            PortfolioService service = new PortfolioService(new PortfolioRepository(dataFile));
+            PortfolioService service = new PortfolioService(new PortfolioRepository());
             JFrame frame = new JFrame("Pathfolio - High School Portfolio");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setContentPane(new PortfolioAppPanel(service));

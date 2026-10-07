@@ -10,8 +10,7 @@ public record Experience(
         ExperienceType type,
         LocalDate date,
         double hours,
-        String description,
-        boolean verified
+        String description
 ) {
     public Experience {
         Objects.requireNonNull(id);
@@ -30,10 +29,6 @@ public record Experience(
     public static Experience create(String title, ExperienceType type, LocalDate date,
                                     double hours, String description) {
         return new Experience(UUID.randomUUID().toString(), title.trim(), type, date,
-                hours, description.trim(), false);
-    }
-
-    public Experience withVerified(boolean value) {
-        return new Experience(id, title, type, date, hours, description, value);
+                hours, description.trim());
     }
 }
